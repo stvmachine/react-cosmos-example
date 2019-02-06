@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "graphql-tag": "^2.10.1",
-    "react": "^16.4.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "2.1.3",
     "react-apollo": "^2.4.1",
-    "react-dom": "^16.4.2",
     "react-redux": "^5.1.1",
-    "react-scripts": "1.1.4",
     "redux": "^4.0.1",
     "redux-devtools-extension": "^2.13.7",
     "redux-form": "^8.1.0"
