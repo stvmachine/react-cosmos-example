@@ -1,0 +1,30 @@
+{
+  "name": "create-react-app-example",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "cosmos": "cosmos"
+  },
+  "dependencies": {
+    "graphql-tag": "^2.10.1",
+    "react": "^16.4.2",
+    "react-apollo": "^2.4.1",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.1.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.7",
+    "redux-form": "^8.1.0"
+  },
+  "devDependencies": {
+    "react-cosmos": "^4.6.4",
+    "react-cosmos-apollo-proxy": "^4.6.1",
+    "react-cosmos-fetch-proxy": "^4.6.1",
+    "react-cosmos-localstorage-proxy": "^4.6.1",
+    "react-cosmos-redux-proxy": "^4.6.1",
+    "react-cosmos-shared": "^4.6.1"
+  }
+}
