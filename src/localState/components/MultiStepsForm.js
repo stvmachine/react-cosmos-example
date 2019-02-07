@@ -27,6 +27,7 @@ export default class MultiStepsForm extends React.Component {
 
     return (
       <React.Fragment>
+        {/* Displaying tabs*/}
         <Step.Group>
           <Step active={step === 1}>
             <Icon name="truck" />
@@ -50,7 +51,15 @@ export default class MultiStepsForm extends React.Component {
               <Step.Title>Confirm Order</Step.Title>
             </Step.Content>
           </Step>
+          <Step active={step === 4}>
+          <Icon name="info" />
+          <Step.Content>
+            <Step.Title>Do something else</Step.Title>
+          </Step.Content>
+        </Step>
         </Step.Group>
+
+        {/* Displaying content of each step*/}
         <React.Fragment>
           {step === 1 && (
             <div>
@@ -65,7 +74,8 @@ export default class MultiStepsForm extends React.Component {
               <Button style={{ marginTop: "20px"}} color="green">Next</Button>
             </div>
           )}
-          {step === 3 && <div>You finish!</div>}
+          {step === 3 && <div>Not yet</div>}
+          {step === 4 && <div>You finish!</div>}
         </React.Fragment>
       </React.Fragment>
     );
