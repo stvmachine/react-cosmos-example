@@ -2,7 +2,7 @@
   "name": "create-react-app-example",
   "version": "0.1.0",
   "scripts": {
-    "start": "http-server -p 3000 cosmos-export",
+    "start": "http-server cosmos-export",
     "react-start": "react-scripts start",
     "react-build": "react-scripts build",
     "react-test": "react-scripts test --env=jsdom",
