@@ -1,17 +1,13 @@
 import { createStore, combineReducers } from "redux";
 import { reducer as reduxFormReducer } from "redux-form";
-import { devToolsEnhancer } from "redux-devtools-extension";
+import { devToolsEnhancer } from "redux-devtools-extension/logOnlyInProduction";
 
 const reducer = combineReducers({
   form: reduxFormReducer // mounted under "form"
 });
 
 export default function(initialState) {
-  const store = createStore(
-    reducer,
-    initialState,
-    process.env.NODE_ENV !== "production" && devToolsEnhancer()
-  );
+  const store = createStore(reducer, initialState, devToolsEnhancer());
 
   return store;
 }
