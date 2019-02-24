@@ -11,3 +11,6 @@
   yarn install
   yarn start
 ```
+
+## Heroku demo
+https://react-cosmos-example.herokuapp.com/
